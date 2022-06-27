@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SpeciesInformationFragment">
+
+    <TextView
+        android:id="@+id/tvTitleName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:background="@color/teal_700"
+        android:textStyle="bold"
+        android:gravity="center"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvbase_happiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleName"
+        app:layout_constraintBottom_toTopOf="@+id/tvCapture_rate"/>
+
+    <TextView
+        android:id="@+id/tvCapture_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbase_happiness"
+        app:layout_constraintBottom_toTopOf="@+id/tvColor"/>
+
+    <TextView
+        android:id="@+id/tvColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCapture_rate"
+        app:layout_constraintBottom_toTopOf="@+id/tvEgg_groups"/>
+
+    <TextView
+        android:id="@+id/tvEgg_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="left"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvColor"/>
+
+    <Button
+        android:id="@+id/btnEvoluLine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Linea Evolutiva"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnAbility"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnAbility"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="HABILIDADES"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
